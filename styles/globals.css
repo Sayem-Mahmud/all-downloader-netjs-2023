@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+.container-x {
+    max-width: 1216px !important;
+    width: 75%;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.container-xExtra {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Mobile device */
+@media only screen and (max-width:1034px) {
+    .container-x {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* .textOverflow {
+        display: -webkit-box;
+        
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } */
+}
+
+/* Tab */
+/* @media only screen and (min-width: 688px) and (max-width: 1279px) {
+    .container-x {
+        width: 100%;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+} */

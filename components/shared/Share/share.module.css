@@ -1,0 +1,36 @@
+.share-modal {
+    width: 344px;
+    height: 350px;
+    background: #fff;
+    transition: all .3s ease-in;
+    z-index: 100;
+    position: absolute;
+    top: 3rem;
+    opacity: 0;
+    right: 0;
+    box-shadow: 0px 8px 16px 2px rgba(97, 97, 97, 0.1), 0px 16px 32px 2px rgba(97, 97, 97, 0.1);
+    border-radius: 16px;
+    display: none;
+}
+
+.share-modal.show {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    top: 3rem;
+    transition: all .3s ease-in;
+}
+
+.overlay {
+    width: 95vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.share-modal.show+.overlay {
+    display: block;
+}
